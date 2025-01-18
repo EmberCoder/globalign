@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "calmcloud.css">
+        
+    </head>
+    <body>
+        
+        <ul class="nav-bar-ul">
+            <li class="nav-bar-li" id="resources"><a href="calmcloud-resources.html">Resources</a></li>
+            <li class="nav-bar-li" id="breathe"><a href="calmcloud-breathe.html">Breathe</a></li>
+            <li class="nav-bar-li" id="arcade"><a href="calmcloud-arcade.html">Arcade</a></li>
+            <li class="nav-bar-li" id="home"><a href="calmcloud-home.html">Home</a></li>
+            
+        </ul>
+        
+        <h1 id = "welcome">WELCOME TO</h1>
+        <h1 id = "main-title">CALMCLOUD</h1>
+        
+        <button style="text-align:center;" id="affirmation"> click to choose a quote </button>
+        
+        <p id="quote-here">Even if you do everything right, at some point you will fail at something. It is more about how you recover from that, that shows the person you are.</p>
+        <script>
+            const quotes = ["Even if you do everything right, at some point you will fail at something. It is more about how you recover from that, that shows the person you are.", "One life. Just one. Why aren't we aren't running like we're on fire towards our wildest dreams?", "You cannot plow a field by turning it over in your mind. To begin, begin.", "It is often said that before you die, your life flashes before your eyes. It is in fact true. It's called living.", "A man must suffer if he is to remake himself, for he is both the marble and the sculptor.", "This too shall pass.", "You wouldn't worry so much what people think about you, if you realized how little they do.", "Be soft. Do not let the world make you hard. Do not let pain make you hate. Do not let the bitterness steal your sweetness. Take pride that even though the rest of the world may disagree, you still believe it to be a beautiful place.", "I am only one, but I am still one. I cannot do everything, but still I can do something. And because I cannot do everything I will not refuse to do the something that I can do.", "Holding on to hate, anger and resentment is like drinking poison and expecting it to harm someone else.", "The world breaks everyone and afterward, we are strong at the broken places.", "Not all those who wander are lost.", "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", "The circumstances of one’s birth are irrelevant. It is what you do with the gift of life that determines who you are.", "I always wonder why birds choose to stay in the same place when they can fly anywhere on the earth, then I ask myself the same question.", "Would you believe in what you believe in, if you were the only one who believed it?", "Yesterday I was clever and tried to change the world. Today I am wise and try to change myself.", "Every man dies, but not every man truly lives.", "And forget not that the earth delights to feel your bare feet and the winds long to play with your hair.", "Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step."];
+            const affirmation = document.getElementById("affirmation");
+            function chooseRandomQuote() {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                const randomQuote = quotes[randomIndex];
+                document.querySelector("p").textContent = `${randomQuote}`;
+            }
+            affirmation.addEventListener("click", chooseRandomQuote); 
+            
+        </script>
+    </body>
+</html>
