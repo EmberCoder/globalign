@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html { 
+    background: url(assets/main-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  
+#time {
+    color: #2991fa;
+    line-height: 0px;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 90px;
+    text-align: right;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+#date {
+    color: white;
+    font-family: 'Space Mono', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 0px;
+    margin-top: 80px;
+    margin-left: 155px;
+}
+
+.button { 
+    font-family: 'Space Mono', serif;
+    background-color: #2991fa;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px; 
+    cursor: pointer; 
+}

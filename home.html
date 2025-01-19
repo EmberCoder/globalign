@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./globalign.css">
+  </head>
+  <body>
+    
+    <main>
+        <p id="date"></p>
+        <p id="time"></p>
+        <a href="adddingtime.html" class="button">Add Meeting</a>
+        <h2>Current Meetings:</h2>
+        <p id = "nomeetings"><i>No meetings currently scheduled.</i></p>
+
+<script>
+function displayTime() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+
+  hours = (hours < 10 ? "0" : "") + hours;
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+
+  document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+  setTimeout(displayTime, 1000);
+}
+
+function displayDate() {
+  var now = new Date();
+  var year = now.getFullYear();
+  var month = now.getMonth() + 1;
+  var day = now.getDate();
+
+  document.getElementById("date").innerHTML = year + "-" + month + "-" + day;
+}
+displayDate();
+
+displayTime();
+displayDate();
+</script>
+    </main>
+  </body>
+</html>
