@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+ 
+ h1 {
+    margin: 20px;
+    color: #cacaca;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(87, 81, 81);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img {
+    margin-bottom: 8px;
+}
+
+.section {
+    display:none;
+}
+
+#section-1{
+    display:block;
+}
