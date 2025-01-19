@@ -8,6 +8,13 @@ html {
     background-size: cover;
   }
 
+  h2 {
+    color: white;
+    font-family: "Space Mono", serif;
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+
   
 #time {
     color: #2991fa;
@@ -39,9 +46,15 @@ html {
     color: white;
     padding: 5px 5px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
+    text-decoration: none;
     font-size: 20px;
-    margin: 4px 2px; 
-    cursor: pointer; 
+    margin-left: 300px;
+}
+
+#nomeetings {
+    margin-left: 150px;
+    background-color: white;
+    width: 300px;
+    font-family: 'Space Mono'
 }
