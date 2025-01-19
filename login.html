@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Globalign Login</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <h1 class="text-center mt-5 pb-3"> WELCOME TO GLOBALIGN</h1>
+
+    <div class="form-container text-center mt-5" >
+
+        <form class="was-validated col-auto" novalidate>
+            <fieldset class="section" id="section-1">
+
+            <legend> Fill out the information to log in</legend>
+
+            <div class="w-75 mx-auto p-2 pt-4 col-auto">
+                <label for="email" class="form-label" required>Email </label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback"> Please input the required field.</div>
+                <div class = "valid-feedback"> Valid </div>
+            </div>
+
+            <div class="mb-4 w-75 mx-auto p-2 col-auto">
+                <label for="password" class="form-label" required>Password </label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback"> Please input the required field.</div>
+                <div class = "valid-feedback"> Valid </div>
+            </div>
+
+            <input class="btn btn-primary col-auto" type="submit" value="Log in">
+
+        </form>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
 
